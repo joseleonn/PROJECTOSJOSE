@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.ico">
+    <script src="https://kit.fontawesome.com/e0acc323b6.js" crossorigin="anonymous"></script>
+    <script src="js/help.js" defer></script>
+    <title>Clima App</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/pages/help.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <i class="fa-solid fa-cloud-sun-rain"></i>
+            <span>Clima App</span>
+
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Clima</a></li>
+                <li><a href="add-city.html">Agregar Ciudad</a></li>
+                <li class="current-page"><a href="#">Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenido principal de la página -->
+    <main>
+        <h2>Ayuda Clima App v.1.0</h2>
+        <p>Esta App te permite consultar el clima de una ciudad en particular usando la
+            API de<a href="https://openweathermap.org/api”" target="_blank">OpenWeatherMap</a>.
+        </p>
+        <p>
+            Para poder consultar el clima, primero deberá <a href="add-city.html">Agregar una ciudad</a> y
+            luego
+            seleccionar la Ciudad en cuestión desde la página <a href="index.html">Clima</a>.
+        </p>
+        <section>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="Nombre">Nombre:</label>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="Nombre" name="Nombre">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Email">Email:</label>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" id="Email" name="Email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Mensaje">Mensaje:</label>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea name="Mensaje" id="Mensaje" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    <tr class="botones">
+                        <td>
+                            <button type="reset">Limpiar</button>
+                        </td>
+                        <td>
+                            <button type="submit">Enviar</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <section class="alerta">
+            <p>ingrese un Email valido</p>
+        </section>
+        <div id="weather-results"></div>
+    </main>
+    <footer>
+        <p>
+            Desarrollado con ♥ - LC2
+        </p>
+    </footer>
+</body>
+
+</html>

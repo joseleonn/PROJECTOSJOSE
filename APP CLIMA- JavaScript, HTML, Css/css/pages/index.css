@@ -1,0 +1,39 @@
+@import url(common.css);
+
+form input {
+    display: block;
+    width: 100px;
+    border: 10px;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 13px;
+    background-color: var(--color-back-active);
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+table select {
+    display: block;
+    border-radius: 10px;
+    border: 1px;
+    padding: 10px;
+    border-style: solid;
+
+}
+
+.weather-result {
+    margin: 30px;
+    width:8cm;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    box-shadow: 1px 0px 10px 8px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 1px 0px 10px 8px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 1px 0px 10px 8px rgba(0, 0, 0, 0.26);
+}

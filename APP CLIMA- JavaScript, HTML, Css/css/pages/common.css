@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+:root {
+    /* Declaro variables CSS con colores principales */
+    --color-theme: #00594c;
+    --color-active: #5df2d6;
+    --color-back-active: #04957d;
+    --color-gradient: linear-gradient(to right, var(--color-theme),
+            var(--color-back-active));
+} /*compartido*/
+
+body {
+    height: 100%;
+    width: 100%;
+} /*compartido*/
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+} /*compartido*/
+
+button,
+a {
+    user-select: none;
+    -webkit-user-select: none;
+} /*compartido*/
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to right, #00594c, #21aa91);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+} /*compartido*/
+
+nav>ul {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    display: flex;
+    flex-direction: row
+} /*compartido*/
+
+nav li {
+    display: flex;
+    flex-direction: row
+} /*compartido*/
+
+
+nav li a {
+    display: block;
+    padding: 16px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--color-active);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+} /*compartido*/
+
+nav li.current-page a{
+    color: #00594c;
+    background-color: var (--color-active);
+    pointer-events: none;
+    background-color: #39e9cc;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+} /*compartido*/
+
+main {
+    margin-top: 120px;
+    overflow: auto;
+    padding: 16px;
+    padding-bottom: 60px;
+    height: calc (100% - 120px);
+} /*compartido*/
+
+h1 {
+    text-align: center;
+    margin:0;
+    color: white;
+} /*compartido*/
+
+h1>img {
+    width: 70px;
+    vertical-align: middle;
+} /*compartido*/
+
+h2 {
+    color: var(--color-theme);
+    margin: 16px 0;
+    text-align: center;
+    font-weight: bold;
+} /*compartido*/
+
+h3 {
+    color: var(--color-theme);
+    margin: 8px 0;
+}
+
+main section {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    background: linear-gradient(to right, #00594c, #21aa91);
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    padding-bottom: 10px;
+    margin: 0;
+} /*compartido*/
+
+footer p {
+    font-size: small;
+    color: white;
+}
+
+main p {
+    margin-bottom: 16px;
+}
+
+/* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
+@media (min-width: 400px) {
+    main {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

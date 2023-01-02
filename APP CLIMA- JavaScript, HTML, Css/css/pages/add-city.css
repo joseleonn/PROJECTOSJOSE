@@ -1,0 +1,70 @@
+@import url(common.css);
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+table {
+    display: flex;
+    vertical-align: center;
+    justify-content: center;
+}
+
+input {
+    font-size: 17px;
+    margin: 5px;
+    border: 1px solid black;
+    background-color: #00594c;
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+button{
+        font-size: 17px;
+        margin: 5px;
+        border: 1px solid black;
+        background-color: #00594c;
+        color: aliceblue;
+        padding: 5px;
+        border-radius: 7px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+}
+
+#agregarCiudad {
+    font-size: 17px;
+    margin: 5px;
+    background-color: #ffffff;
+    color: aliceblue;
+    padding: 3px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
+}
+
+label {
+    font-weight: bold;
+    padding: 10px;
+}
+
+div {
+    text-align: center;
+}
+
+
+#item{
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    color:white;
+    width: 40%;
+    margin-bottom: 30px;
+    display: none;
+}
